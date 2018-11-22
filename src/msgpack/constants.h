@@ -7,7 +7,7 @@
 
 #define MSGPACK_SAFETY_CHECK(ACTION) \
 if(safely) { \
-    if(!ACTION) { \
+    if(!(ACTION)) { \
         return false; \
     } \
 }
